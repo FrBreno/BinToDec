@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <script src="scripts/script.js"></script>
+    <title>Bin2Dec</title>
+</head>
+<body>
+    <header>
+        <div class="logo">BinToDec <span>Converter</span></div>
+        <nav>
+            <ul>
+                <li><a href="#converter" class="nav-link">Converter</a></li>
+                <li><a href="#binary" class="nav-link">Binary</a></li>
+                <li><a href="#decimal" class="nav-link">Decimal</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="converter" class="converter">
+            <div class="converter-box">
+                <h2>CONVERT BINARY TO DECIMAL</h2>
+                <form id="converter-form">
+                    <fieldset>
+                        <label for="insertion">Insert binary:</label>
+                        <input type="text" name="insertion" id="insertion" placeholder="(Ex.: 00110101)" maxlength="8">
+                        <label for="result">Result (decimal):</label>
+                        <input type="text" name="result" id="result">
+                    </fieldset>
+                    <div class="buttons">
+                        <button type="submit" id="ToConvert-button">ToConvert</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="binary"></section>
+        <section id="decimal"></section>
+        <section id="about"></section>
+        <section id="contact"></section>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>

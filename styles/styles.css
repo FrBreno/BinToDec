@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-color:rgb(26, 26, 26);
+    --secondary-color:rgb(233, 29, 37);
+    --tertiary-color:rgb(254, 254, 254);
+}
+
+body, button {
+    font-family: 'Akshar', sans-serif;
+    background-color: var(--main-color);
+    color: var(--tertiary-color);
+    font-size: 16px;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 98px;
+    width: 100%;
+    height: 74px;
+    background-color: var(--main-color);
+}
+
+.logo {
+    color:var(--secondary-color);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.logo span {
+    color: var(--tertiary-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav {
+    min-width: 387px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: var(--tertiary-color);
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* MAIN */
+
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 0 98px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+
+/* CONVERTER */
+
+.converter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.converter-box { 
+    min-width: 430px;
+    text-align: center;
+}
+
+.converter-box form fieldset {
+    border: none;
+    text-align:left;
+}
+
+.converter-box form fieldset label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.converter-box form fieldset input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px 7px;
+    border:none;
+    background-color: rgb(68, 68, 68);
+    color: var(--tertiary-color);
+}
+
+.buttons {
+    display: flex;
+    justify-content:end;
+}
+
+.buttons button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 5px 8px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+}
