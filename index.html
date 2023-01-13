@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css" type="text/css" />
-    <script src="scripts/script.js"></script>
-    <title>Bin2Dec</title>
+    <script src="scripts/script.js" defer></script>
+    <title>BinToDec</title>
 </head>
 <body>
     <header>
@@ -16,32 +16,90 @@
                 <li><a href="#binary" class="nav-link">Binary</a></li>
                 <li><a href="#decimal" class="nav-link">Decimal</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="converter" class="converter">
+        <section id="converter">
             <div class="converter-box">
                 <h2>CONVERT BINARY TO DECIMAL</h2>
                 <form id="converter-form">
                     <fieldset>
                         <label for="insertion">Insert binary:</label>
-                        <input type="text" name="insertion" id="insertion" placeholder="(Ex.: 00110101)" maxlength="8">
+                        <input type="text" name="insertion" id="insertion" placeholder="(Ex.: 10110101)">
                         <label for="result">Result (decimal):</label>
-                        <input type="text" name="result" id="result">
+                        <input type="text" name="result" id="result" disabled>
                     </fieldset>
                     <div class="buttons">
-                        <button type="submit" id="ToConvert-button">ToConvert</button>
+                        <button type="submit" id="to-convert-button">ToConvert</button>
                     </div>
                 </form>
             </div>
         </section>
-        <section id="binary"></section>
-        <section id="decimal"></section>
-        <section id="about"></section>
-        <section id="contact"></section>
+        <section id="binary">
+            <div class="section-content">
+                <h2>What is the binary system?</h2>
+                <p>
+                    The binary or base-2 system is a positional numbering system in which all quantities are represented based on two numbers, 0 and 1. 
+                    In computing, a binary digit (0 or 1) is called a bit, and a grouping of 8 bits corresponds to one byte.
+                </p>
+                <p>
+                    This system is the basis of Boolean Algebra (by George Boole — English mathematician), which allows you to do logical and arithmetic operations using only two digits or two states. 
+                    All digital electronics and information technology are based on the binary system and Boolean logic, which allows the representation of numbers and characters by digital electronic circuits and the performance of logical and arithmetic operations. 
+                    Thus, this system is used as a natural numbering system for digital computers, which work internally with two voltage levels.
+                </p>
+                <p>
+                    For more information access: <a href="https://en.wikipedia.org/wiki/Binary_number" target="_blank">Wikipedia - Binary numbering system</a>
+                </p>
+            </div>
+        </section>
+        <section id="decimal">
+            <div class="section-content">
+                <h2>What is the decimal system?</h2>
+                <p>
+                    The decimal system is a positional numbering system that uses base ten.
+                </p>
+                <p>
+                    The fundamental principle of the decimal system is that ten units of any order form one of the next higher order. 
+                    After the orders, the constituent units of the numbers are grouped into classes, where each class has three orders, where each order has a special name, being identical to the same orders of the other classes.
+                </p>
+                <p>
+                    The first class, that of units, has the orders of hundreds, tens and units. 
+                    The order of the units corresponds to the numbers from one to nine. 
+                    The order of tens corresponds to the numbers ten (one ten) to ninety (nine tens), each of these numbers being ten times the corresponding number in the previous order. 
+                    Hundreds correspond to numbers from one to nine hundreds. 
+                    Analogously, each of these numbers corresponds to ten times the corresponding one in the previous order. 
+                </p>
+                <p>
+                    For more information access: <a href="https://en.wikipedia.org/wiki/Decimal" target="_blank">Wikipedia - Decimal</a>
+                </p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="section-content">
+                <h2>About this project</h2>
+                <p>
+                    BinToDec Converter is a small project created to convert binary numbers into decimal numbers, and vice versa, in a simple and fast way, without calculations and without headaches for you : )
+                </p>
+                <div class="contact">
+                    <h3>My contacts</h3>
+                    <div class="contact-links">
+                        <a href="https://github.com/FrBreno" target="_blank" id="github">
+                          <i class="icon-github icon"></i> GitHub
+                        </a> 
+                        <a href="https://www.linkedin.com/in/franciscobreno/" id="linkedin">
+                            <i class="icon-linkedin-square icon"></i> LinkedIn
+                        </a>
+                        <a href="mailto:fbreno77@dev.com" target="_blank" id="send-a-mail">
+                          <i class="icon-envelope icon"></i> Send a mail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>footer</footer>
+    <footer>
+        <p>&copy; 2023 Todos os direitos reservados - Francisco Breno</p>
+    </footer>
 </body>
 </html>
