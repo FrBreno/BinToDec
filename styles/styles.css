@@ -161,7 +161,7 @@ section#about {
 
 .buttons {
     display: flex;
-    justify-content:end;
+    justify-content: space-between;
 }
 
 .buttons button {
@@ -176,6 +176,19 @@ section#about {
 .buttons button:hover {
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
+}
+
+.buttons button:nth-of-type(1) {
+    background-color: var(--quaternary-color);
+}
+
+.buttons button:hover:nth-of-type(1) {
+    color: var(--tertiary-color);
+    background-color: rgb(68, 68, 68);
+}
+
+div#decimal-converter-for-binary {
+    display: none;
 }
 
 /* ABOUT */

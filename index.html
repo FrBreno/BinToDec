@@ -21,9 +21,9 @@
     </header>
     <main>
         <section id="converter">
-            <div class="converter-box">
+            <div class="converter-box" id="binary-converter-for-decimal">
                 <h2>CONVERT BINARY TO DECIMAL</h2>
-                <form id="converter-form">
+                <form class="converter-form">
                     <fieldset>
                         <label for="insertion">Insert binary:</label>
                         <input type="text" name="insertion" id="insertion" placeholder="(Ex.: 10110101)">
@@ -31,7 +31,24 @@
                         <input type="text" name="result" id="result" disabled>
                     </fieldset>
                     <div class="buttons">
-                        <button type="submit" id="to-convert-button">ToConvert</button>
+                        <button id="decimal-for-binary-button">Decimal for binary</button>
+                        <button type="submit" class="to-convert-button">Convert</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="converter-box" id="decimal-converter-for-binary">
+                <h2>DECIMAL CONVERT TO BINARY</h2>
+                <form class="converter-form">
+                    <fieldset>
+                        <label for="insertion">Insert decimal:</label>
+                        <input type="text" name="insertion" id="insertion" placeholder="(Ex.: 47)">
+                        <label for="result">Result (binary):</label>
+                        <input type="text" name="result" id="result" disabled>
+                    </fieldset>
+                    <div class="buttons">
+                        <button id="binary-for-decimal-button">Binary for decimal</button>
+                        <button type="submit" class="to-convert-button">Convert</button>
                     </div>
                 </form>
             </div>
