@@ -48,7 +48,7 @@ header {
     background-color: var(--main-color);
 }
 
-.logo {
+.logo a {
     color:var(--secondary-color);
     font-size: 32px;
     font-weight: 500;
@@ -70,13 +70,30 @@ nav ul {
 }
 
 .nav-link {
+    position: relative;
     color: var(--tertiary-color);
     font-size: 19px;
     transition: 0.3s;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active  {
     color: var(--secondary-color);
+}
+
+.nav-link::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after, 
+.nav-link.active::after {
+    width: 100%;
 }
 
 /* MAIN */
@@ -106,12 +123,12 @@ h3 {
     font-size: 24px;
 }
 
-a {
+.section-content a {
     color: var(--secondary-color);
     transition: 0.3s;
 }
 
-a:hover {
+.section-content a:hover {
     color: rgb(161, 21, 25);
 }
 
