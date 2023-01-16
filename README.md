@@ -41,37 +41,37 @@ This web page aims to offer the conversion of binary numbers into decimal number
 
 <div>
 <img height="330em" src="https://user-images.githubusercontent.com/91495296/212757318-8c045424-8403-40e0-9f7a-645bc8d37949.jpg">
-<img height="320em" src="https://user-images.githubusercontent.com/91495296/212757329-162a225e-b3b8-4a27-914b-c4987c54f293.png" />
+<img height="320em" src="https://user-images.githubusercontent.com/91495296/212759827-89378acc-a8f9-43f9-a7e3-def0160229a8.png" />
 </div>  
 &nbsp;
 
 <div>
 <img height="330em" src="https://user-images.githubusercontent.com/91495296/212757319-eaadb79c-f5cc-4ef5-9ba9-a927c336af94.jpg">
-<img height="320em" src="https://user-images.githubusercontent.com/91495296/212757331-5d5d6489-2fb2-4d8c-88c5-2b711e94ee68.png" />
+<img height="320em" src="https://user-images.githubusercontent.com/91495296/212759829-8a839dfe-322f-4641-a581-83e42773a598.png" />
 </div>
 &nbsp;
 
 <div>
 <img height="330em" src="https://user-images.githubusercontent.com/91495296/212757320-279081d1-2e0d-47a3-bf3d-a9779aff3597.jpg">
-<img height="320em" src="https://user-images.githubusercontent.com/91495296/212757333-080897fb-e073-45ab-a991-3b58586632fe.png" />
+<img height="320em" src="https://user-images.githubusercontent.com/91495296/212759830-22206062-76fa-4fb0-8e97-da103de30de8.png" />
 </div>
 &nbsp;
 
 <div>
 <img height="330em" src="https://user-images.githubusercontent.com/91495296/212757324-f82723b2-6914-49de-a87d-9ff11d840fc7.jpg">
-<img height="320em" src="https://user-images.githubusercontent.com/91495296/212757336-a1a999af-3637-4905-be35-c613e84a1bf8.png" />
+<img height="320em" src="https://user-images.githubusercontent.com/91495296/212759833-b1bb1b75-197c-4b07-8009-103260bce677.png" />
 </div>
 &nbsp;
 
 <div>
 <img height="330em" src="https://user-images.githubusercontent.com/91495296/212757326-2c33f8bc-c879-48bc-9aff-e7635354cbe7.jpg">
-<img height="320em" src="https://user-images.githubusercontent.com/91495296/212757337-28bc3030-de89-470a-af17-48fe8e4e2bba.png" />
+<img height="320em" src="https://user-images.githubusercontent.com/91495296/212759822-e549b465-5e25-4813-9270-23e0eb7ec5b1.png" />
 </div>
 &nbsp;
 
 <div>
 <img height="330em" src="https://user-images.githubusercontent.com/91495296/212757327-9b9ab374-90dd-4a1e-9534-0424c629d612.jpg">
-<img height="320em" src="https://user-images.githubusercontent.com/91495296/212757317-5198a20c-453e-4d63-a302-bb5029c117c8.png" />
+<img height="320em" src="https://user-images.githubusercontent.com/91495296/212759825-4cb2b4fd-fba4-42bd-bfd9-e78d95c5d946.png" />
 </div>
 
 ---
