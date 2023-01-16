@@ -1,60 +1,18 @@
+import mobileNavbar from "./nav/mobileNavbar.js";
+import activateMenuAtCurrentSection from "./nav/animatedNav.js";
+import { convertBin } from "./converter/convertBinary.js";
+import { convertDecimal } from "./converter/convertDecimal.js";
+
 const btnsToConvert = document.querySelectorAll('button.to-convert-button');
 const btnDecimalForBinary = document.querySelector('#decimal-for-binary-button');
 const btnBinaryForDecimal = document.querySelector('#binary-for-decimal-button');
-const sections = document.querySelectorAll('main section[id]')
-
-function binaryInputValidation(str) {
-    return !(/[^01]/).test(str) && str.length > 0;
-}
-
-function convertBin(str) {
-    str = str.split(" ").join("");
-    
-    if(binaryInputValidation(str)) {   
-        return parseInt(str, 2);
-    }
-    
-    return 'Digite um valor binário válido!';
-}
-
-function decimalInputValidation(str) {
-    return !(/\D/).test(str) && str.length > 0;
-}
-
-function convertDecimal(str) {
-    
-    if (decimalInputValidation(str)) {
-        return parseInt(str).toString(2);
-    }
-    
-    return 'Digite um valor decimal válido!';
-}
 
 function changeDisplayStyle(id01, id02) {
     document.querySelector(id01).style.display = 'none';
     document.querySelector(id02).style.display = 'block';
 }
 
-function activateMenuAtCurrentSection() {
-    const checkpoint = window.scrollY + (window.innerHeight / 9.39) * 1.1;
-    
-    for (const section of sections) {
-        const sectionId = section.getAttribute('id');
-
-        const checkpointStart = checkpoint >= section.offsetTop;
-        const checkpointEnd = checkpoint <= (section.offsetTop + section.offsetHeight);
-
-        if (checkpointStart && checkpointEnd) {
-        document
-            .querySelector('nav ul li a[href*=' + sectionId + ']')
-            .classList.add('active')
-        } else {
-        document
-            .querySelector('nav ul li a[href*=' + sectionId + ']')
-            .classList.remove('active')
-        }
-    }
-}
+/* CONVERTER */
 
 btnDecimalForBinary.addEventListener('click', (event) => {
     event.preventDefault();
@@ -80,4 +38,8 @@ for(let indForm = 0; indForm <= 1; indForm++) {
     });
 }
 
-window.addEventListener('scroll', () => activateMenuAtCurrentSection())
+/* NAV ANIMATION */
+window.addEventListener('scroll', () => activateMenuAtCurrentSection());
+
+/* RESPONSIVE NAV */
+mobileNavbar('.mobile-menu', '.nav-list', '.nav-list li');
