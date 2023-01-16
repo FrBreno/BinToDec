@@ -8,5 +8,5 @@ export function convertDecimal(str) {
         return parseInt(str).toString(2);
     }
     
-    return 'Digite um valor decimal válido!';
+    return 'Please enter a valid decimal value!';
 }

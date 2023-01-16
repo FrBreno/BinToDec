@@ -9,5 +9,5 @@ export function convertBin(str) {
         return parseInt(str, 2);
     }
     
-    return 'Digite um valor binário válido!';
+    return 'Please enter a valid binary value!';
 }
